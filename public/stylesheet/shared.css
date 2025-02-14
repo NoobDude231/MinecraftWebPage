@@ -1,37 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+html{
+  height: 100%;
+  width: 100%;
+}
+
 body {
-    /*background: linear-gradient(180deg, rgba(19,12,47,1) 0%, rgba(15,11,34,1) 100%); */
-    background-color: rgb(16,11,37);
-    font-family: "Inter", serif;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+  /*background: linear-gradient(180deg, rgba(19,12,47,1) 0%, rgba(15,11,34,1) 100%); */
+  background-color: rgb(16, 11, 37);
+  font-family: "Inter", serif;
+  color: white;
+  padding: 0%;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
-    font-size: 46px;
+  font-size: 2.5rem;
+}
+
+.joinUs-section{
+  margin-top: 5%;
 }
 
 .flex-container-center {
-    display: flex;
-     align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
-@media screen and (max-width: 750px) {
-  /* set column1 and column2 to 50% width each */
-      .flex-container-center {
-        flex-direction: column-reverse;
-        
-      }
-  }
-
-.horizontal-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+.minecraft_storeImg{
+  max-width: 30%; 
+  min-width: 20%;
+  height: auto;
+  margin-left: 2rem;
+}
