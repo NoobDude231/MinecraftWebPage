@@ -6,34 +6,128 @@ html{
 }
 
 body {
-  /*background: linear-gradient(180deg, rgba(19,12,47,1) 0%, rgba(15,11,34,1) 100%); */
+  background: linear-gradient(180deg, rgba(19,12,47,1) 0%, rgba(15,11,34,1) 100%); 
+  background-repeat:no-repeat;
+  background-attachment: fixed;
   background-color: rgb(16, 11, 37);
   font-family: "Inter", serif;
   color: white;
   padding: 0%;
-  margin: 0%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* this make the page always larger than the window for some reason (tested on firefox 135)
   height: 100%;
   width: 100%;
+  */
+
+}
+
+footer {
+  border-color: rgba(255, 255, 255, 10);
+  border-width: 1rem;
+  background-color: rgb(16, 11, 37);
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 5vw;
+}
+h2 {
+  font-size: max(3.8vw, 1.8rem);
+}
+
+p {
+  font-size: max(1.3vw, 1rem);
+
+}
+
+button {
+  background-color: rgb(23,165,49);
+  color: white;
+  font-weight: 500;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+  border-radius: 8px;
+  border-color: transparent;
+  font-size: 1.15rem;
+  transition: 130ms;
+}
+
+button:hover {
+  background-color: rgb(55, 192, 73);
+}
+
+button:active {
+  transition: 90ms;
+  background-color: rgb(20, 120, 38);
+  opacity: 0.9;
+}
+
+.topnav {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.topnav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.topnav-right {
+  float: right;
 }
 
 .joinUs-section{
-  margin-top: 5%;
+  margin-top: 7.5%;
 }
 
-.flex-container-center {
+.joinUs-button{
+  transform: translateY(-0.3rem);
+}
+
+.flex-container-center{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin-bottom: 7rem;  
 }
 
-.minecraft_storeImg{
-  max-width: 30%; 
-  min-width: 20%;
-  height: auto;
-  margin-left: 2rem;
+.flex-container-center-no-margin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; 
 }
+
+.flex-container-horizontal {
+  display: flex;
+  flex-direction: row; 
+}
+
+.minecraft-store-img{
+  min-width: 22rem;
+  max-width: 40%;
+  margin-left: -0.1rem;
+  transform: translateY(1.5rem);
+}
+
+.minecraft-well-img {
+  min-width: 23rem;
+  max-width: 40%;
+  transform: translateY(-2rem);
+}
+
+.who-are-we-paragraph {
+  max-width: 20rem;
+  margin-right: 2.5rem;
+}
+
+

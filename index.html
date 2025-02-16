@@ -7,23 +7,175 @@
     <title>Super cool server</title>
     <link rel="stylesheet" type="text/css" href="public/stylesheet/shared.css">
     <link rel="stylesheet" type="text/css" href="public/stylesheet/mobile.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/copy-button.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/check-out-more-screenshots-arrow.css">    
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/sidebar.css"> 
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/screenshot-section.css"> 
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
+<div class="sidenav" id="sidebar">
+    <div class="flex-container-center-no-margin">
+        <button class="copy-button" id="copy-url-button" onmouseleave="resetCopyButton()" onclick="copyServerLink()" >
+            <span>link.to.server.org</span>
+            
+            <span id="click-to-copy-text-sidebar">Click to copy</span>                    
+        </button>
+    </div>
+</div>
+
 <body>
+    
+
+    <button class="sidenav-button" onclick="openSidebar()">
+        <svg id="_圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359.86 305.57">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #e9e9e9;
+                  stroke-linecap: round;
+                  stroke-miterlimit: 10;
+                  stroke-width: 51px;
+                }
+              </style>
+            </defs>
+            <line class="cls-1" x1="25.5" y1="25.5" x2="334.36" y2="25.5"/>
+            <line class="cls-1" x1="25.5" y1="152.79" x2="334.36" y2="152.79"/>
+            <line class="cls-1" x1="25.5" y1="280.07" x2="334.36" y2="280.07"/>
+          </svg>
+    </button>
+    
     <main>
-        <section class="joinUs-section">
-            <div class="flex-container-center">
+        
+        <nav class="topnav">
+            <!-- this thing below is just a placeholder logo -->
+            <img style="width: 22px; transform: translateY(5px); border-radius: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpdtEvLClK0WJ-sei_8Z3IhgDuY3gTKhvErQ&s" alt="server logo">
+            <a >super cool server name</a>
+            <div class="topnav-right">
+                <a href="/404/">Home</a>
+                <a href="/404/">Rules</a>
+                <a href="/404/">FAQ</a>
+                <a href="/404/">Discord Server</a>
+                <a href="/404/">Screenshots</a>
+
+                <button class="copy-button" id="copy-url-button" onmouseleave="resetCopyButton()" onclick="copyServerLink()" >
+                    <span>link.to.server.org</span>
                     
-                <h1>Join our chill <br/> minecraft server</h1>            
-                    
-                <img class="minecraft_storeImg" src="./public/image/minecraft_store.png">
+                    <span id="click-to-copy-text">Click to copy</span>                    
+                </button>
                 
             </div>
+        </nav>
+
+        <section class="joinUs-section">
+            <div class="flex-container-center">
+                <div>
+                    <h1>Join our chill <br/> Minecraft server</h1> 
+                    <button class="joinUs-button">Join us</button>
+                </div>                         
+                <img class="minecraft-store-img" src="./public/image/minecraft_store.png">
+            </div>
         </section>
+
+
+        <section>
+            <div class="flex-container-center">
+                <img class="minecraft-well-img" src="./public/image/minecraft_well.png">
+                <div>
+                    <h2 class="who-are-we-title">Who are we?</h2>
+                    <p class="who-are-we-paragraph">
+                        We are a chill Minecraft community that plays to relax and have fun. We explore, build and help each other out.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex-container-center-no-margin">
+                <h2 class="screenshot-title">Screenshots</h2>                
+            </div>
+            <div class="screenshots-paragraph-container">
+                <p>Check out what we have built!</p>               
+            </div>            
+            <div>
+                <div class="flex-container-center-screenshots-top">
+                    <img class="screenshot1" src="public/image/Screenshot1.png">
+                    <img class="screenshot2" src="public/image/Screenshot2.png">
+                    <img class="screenshot3" src="public/image/Screenshot3.png">
+                </div>
+                <div class="flex-container-center-screenshots-bottom">
+                    <img class="screenshot4" src="public/image/Screenshot4.png">
+                    <img class="screenshot5" src="public/image/Screenshot5.png">
+                    <img class="screenshot6" src="public/image/Screenshot6.png">
+                </div>
+            </div>
+            <div class="flex-container-center">
+                <div class="check-out-more-screenshots-arrow" >
+                    <p>Check out more</p>
+                    <p>-></p>
+                </div>
+            </div>
+        </section>
+
+
     </main>
     
-   
+   <script>
+    function copyServerLink() {
+        try {
+            navigator.clipboard.writeText("never gonna give u up");
+            document.getElementById('click-to-copy-text').innerHTML = "Copied!";
+        } catch (error) {
+            alert(error);
+        }
+    }
+
+    function resetCopyButton() {
+        setTimeout(function() {
+            document.getElementById('click-to-copy-text').innerHTML = "Click to copy";  
+        }, 200);
+    }
+
+    var isSidebarOpen = false;
+
+    function openSidebar() {
+        var element = document.getElementById('sidebar');        
+        if (isSidebarOpen) {            
+            element.style.display = "none";
+            isSidebarOpen = false;
+
+        }
+        else {
+            element.style.display = "block";
+            isSidebarOpen = true;
+        }
+
+    }
+
+    function closeSidebar() {
+        var element = document.getElementById('sidebar');
+        element.style.display = "none";
+    }
+
+
+    ScrollReveal().reveal('.minecraft-well-img', { viewOffset: {bottom: 190}, dsitance: '40px', delay: 20  });
+    ScrollReveal().reveal('.who-are-we-title', { viewOffset: {bottom: 60}, dsitance: '40px', delay: 60  });
+    ScrollReveal().reveal('.who-are-we-paragraph', { viewOffset: {bottom: 10}, dsitance: '40px', delay: 110  });
+
+    ScrollReveal().reveal('.screenshot-title', { viewOffset: {bottom: 80}, dsitance: '400px', delay: 0 });
+    ScrollReveal().reveal('.screenshots-paragraph-container', { viewOffset: {bottom: 80}, dsitance: '450px', delay: 0 });
+
+    ScrollReveal().reveal('.screenshot1', { viewOffset: {bottom: 80}, dsitance: '500px', delay: 20 });
+    ScrollReveal().reveal('.screenshot2', { viewOffset: {bottom: 80}, dsitance: '500px', delay: 80 });
+    ScrollReveal().reveal('.screenshot3', { viewOffset: {bottom: 80}, dsitance: '500px', delay: 160 });
+    ScrollReveal().reveal('.screenshot4', { viewOffset: {bottom: 10}, dsitance: '500px', delay: 220 });
+    ScrollReveal().reveal('.screenshot5', { viewOffset: {bottom: 10}, dsitance: '500px', delay: 280 });
+    ScrollReveal().reveal('.screenshot6', { viewOffset: {bottom: 10}, dsitance: '500px', delay: 360 });
+   </script>
 
 </body>
+
+
 
 </html>

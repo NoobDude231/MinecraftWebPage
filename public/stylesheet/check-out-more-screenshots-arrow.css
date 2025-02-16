@@ -1,0 +1,15 @@
+.check-out-more-screenshots-arrow {
+  display: flex;
+  flex-direction: row; 
+  transition: 200ms;
+}
+
+.check-out-more-screenshots-arrow :last-child{
+  margin-left: 0.3rem;
+  transition: 200ms;
+}
+
+.check-out-more-screenshots-arrow:hover :last-child{
+  margin-left: 0.7rem;
+  transition: 200ms;
+}

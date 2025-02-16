@@ -1,0 +1,57 @@
+
+.sidenav-button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    z-index: 2;
+    background-image: url(/public/icons/hamburger-menu.svg);
+    margin-top: -0.5rem;
+    background-color: rgb(21, 18, 53);
+    border-color: rgba(44, 42, 120, 0.683);
+    border-style: solid;
+
+    height: 3rem;
+    width: 3rem;
+}
+
+.sidenav-button:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    z-index: 2;
+    background-image: url(/public/icons/hamburger-menu.svg);
+    margin-top: -0.5rem;
+    background-color: rgb(44, 42, 120);
+    border-color: rgba(44, 42, 120, 0.683);
+    border-style: solid;
+
+    height: 3rem;
+    width: 3rem;
+}
+
+.sidenav-button svg {
+    overflow:visible;
+    position:relative;
+    transform: translateY(-0.085rem);
+    scale: 1.7;
+    opacity: 0.9;
+}
+
+.sidenav {
+    padding-top: 7rem;
+    display: none;
+    background-color: rgb(18, 13, 44);
+    position: fixed;
+    margin-top: -2.5rem;
+    margin-left: -1.4rem;
+    z-index: 1;
+    width: 17rem;
+    height: 101.5%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sidenav .copy-button {
+    transform: translatex(-0.3rem);
+    width: 80%;
+}

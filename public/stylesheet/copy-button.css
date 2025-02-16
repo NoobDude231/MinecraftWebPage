@@ -1,0 +1,52 @@
+.copy-button {
+  background-color: rgb(23,165,49);
+  color: white;
+  font-weight: 500;
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  transition: 130ms;
+  margin-left: 0.5rem;
+  width: 180px;
+  height: 38px;
+  clip-path: inset(0px 0px 0px 0px);
+  transform: translateY(-0.33rem);
+}
+
+.copy-button:hover {
+  background-color: rgb(55, 192, 73);
+}
+
+.copy-button:active {
+  transition: 90ms;
+  background-color: rgb(20, 120, 38);
+  opacity: 0.9;
+}
+
+.copy-button span:first-child {
+  white-space: nowrap;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition-duration: 200ms;
+}
+
+.copy-button span:last-child {
+  white-space: nowrap;
+  position: absolute;
+  transform: translateY(100%) translatex(-50%);
+  transition-duration: 200ms;
+}
+
+#copy-url-button:hover span:first-child {
+  transform: translate(-50%, -100px);
+  transition-duration: 200ms;
+}
+
+#copy-url-button:hover span:last-child {
+  transform: translateY(-50%) translatex(-50%);
+  transition-duration: 200ms;
+}
