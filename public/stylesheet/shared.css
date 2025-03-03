@@ -81,7 +81,11 @@ button:active {
 }
 
 .topnav-right {
+  display: flex;
   float: right;
+  align-content: center;
+  align-items: center;
+  vertical-align: super;
 }
 
 .joinUs-section{
