@@ -16,7 +16,8 @@
     .joinUs-section{
         margin-right: 2%;
     }
-    .minecraft_storeImg{
+    .minecraft-store-img{ 
+        margin-top: 3.5rem !important;       
         margin-left: 0.3rem;
     }
 
@@ -32,7 +33,8 @@
     }
     .joinUs-section{
         margin-top: 2rem;
-      }
+    }
+        
 }
 
 @media screen and (min-width: 867px) {
