@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blocky Alleys</title>
+    <link rel="icon" type="image/x-icon" href="public/image/favicon.png">
     <link rel="stylesheet" type="text/css" href="public/stylesheet/shared.css">
     <link rel="stylesheet" type="text/css" href="public/stylesheet/mobile.css">
     <link rel="stylesheet" type="text/css" href="public/stylesheet/copy-button.css">
@@ -14,16 +15,36 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
+
 <div class="sidenav" id="sidebar">
-    <div class="flex-container-center-no-margin">
-        <button class="copy-button" id="copy-url-button" onmouseleave="resetCopyButton()" onclick="copyServerLink()" >
-            <span>mc.blockyalleys.com</span>
+    <div class="sidenav-content">
+        <div class="flex-container-center-no-margin">
+            <img class="logo" src="public/image/logo-big.png" alt="server logo">
+        </div>
             
-            <span id="click-to-copy-text-sidebar">Click to copy</span>                    
-        </button>
+
+        <div class="flex-container-center-no-margin">
+            <button class="copy-button" id="copy-url-button" onmouseleave="resetCopyButton()" onclick="copyServerLink()" >
+                <span>mc.blockyalleys.com</span>
+                
+                <span id="click-to-copy-text-sidebar">Click to copy</span>                    
+            </button>
+            
+        </div>
+        <div class="flex-container-vertical">         
+            <a href="404">Hodme</a>
+            <a href="404">Rules</a>
+            <a href="404">FAQ</a>
+            <a href="404">Join us</a>
+            <a href="https://discord.gg/7R5wVVTqgY">Discord Server</a>
+        </div>
+    </div>
+    <div class="sidenav-background"  onclick="openSidebar()">
+
     </div>
 </div>
 
+    
 <body>
     
 
@@ -49,8 +70,7 @@
     <main>
         
         <nav class="topnav">
-            <!-- this thing below is just a placeholder logo -->
-            <img style="width: 10rem; transform: translateY(-0.3rem); border-radius: 100px;" src="public/image/logo-big.png" alt="server logo">
+            <img class="logo" src="public/image/logo-big.png" alt="server logo">
             <div class="topnav-right">
                 <a href="/404/">Rules</a>
                 <a href="/404/">FAQ</a>
@@ -116,13 +136,36 @@
             </div>
         </section>
 
+        <footer>
+            <div class="flex-container-center-no-margin">
+                <div class="flex-container-horizontal">
+                    <img class="logo" src="public/image/logo-big.png">
+                </div>
+            </div>
+            <div class="flex-container-center-no-margin">
+                <div class="flex-container-horizontal">
+                    <a href="404">Home</a>
+                    <a href="404">Rules</a>
+                    <a href="404">FAQ</a>
+                    <a href="404">Join us</a>
+                    <a href="https://discord.gg/7R5wVVTqgY">Discord Server</a>
+                </div>
+            </div>
+            <div class="flex-container-center-no-margin">
+                <div class="flex-container-horizontal">
+                    <p class="footer-copyright">© 2025 Blocky Alleys Authors. All Rights Reserved</p>
+                </div>
+            </div>
+            
+        </footer>
+
 
     </main>
     
    <script>
     function copyServerLink() {
         try {
-            navigator.clipboard.writeText("never gonna give u up");
+            navigator.clipboard.writeText("mc.blockyalleys.com");
             document.getElementById('click-to-copy-text').innerHTML = "Copied!";
         } catch (error) {
             alert(error);

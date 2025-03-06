@@ -19,15 +19,45 @@ body {
   height: 100%;
   width: 100%;
   */
+}
 
+footer a {
+  font-size: max(2.vw, 1.8rem);
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
+  font-family: "Inter", serif;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-size: max(2.vw, 1.8rem);
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
+  font-family: "Inter", serif;
+  color: white;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+footer .footer-copyright{
+  margin-top: 1.6rem;
+  font-size: max(1.1vw, 0.7rem);  
+  opacity: 0.7;
+  margin-bottom: 1.6rem;
 }
 
 footer {
   border-color: rgba(255, 255, 255, 10);
   border-width: 1rem;
-  background-color: rgb(16, 11, 37);
+  /* background-color: rgb(16, 11, 37); */
   margin-left: -1.5rem;
   margin-right: -1.5rem;
+}
+
+footer .logo{
+  width: 15rem;
 }
 
 h1 {
@@ -43,9 +73,10 @@ p {
 }
 
 button {
+  font-family: "Inter", serif;
   background-color: rgb(23,165,49);
   color: white;
-  font-weight: 500;
+  font-weight: 00;
   padding-left: 2.8rem;
   padding-right: 2.8rem;
   padding-top: 0.55rem;
@@ -69,6 +100,12 @@ button:active {
 .topnav {
   color: white;
   padding-top: 0.8rem;
+}
+
+.logo {
+  width: 10rem; 
+  transform: translateY(-0.4rem); 
+  border-radius: 100px;
 }
 
 .topnav a {
@@ -114,6 +151,11 @@ button:active {
 .flex-container-horizontal {
   display: flex;
   flex-direction: row; 
+}
+
+.flex-container-vertical {
+  display: flex;
+  flex-direction: column; 
 }
 
 .minecraft-store-img{
