@@ -1,5 +1,6 @@
 .screenshots-paragraph-container {
-    margin-top: min(-3.4vw, -1.5rem);
+    /* margin-top: min(-3.4vw, -1.5rem); */
+    margin-top: -1rem;
     margin-bottom: 0.7rem;
     display: flex;
     align-items: center;

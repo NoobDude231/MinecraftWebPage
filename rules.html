@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocky Alleys</title>
+    <link rel="icon" type="image/x-icon" href="public/image/favicon.png">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/shared.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/mobile.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/copy-button.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/check-out-more-screenshots-arrow.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/screenshot-section.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/rules.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+
+<div class="sidenav" id="sidebar">
+    <div class="sidenav-content">
+        <div class="flex-container-center-no-margin">
+            <img class="logo" src="public/image/logo-big.png" alt="server logo">
+        </div>
+
+
+        <div class="flex-container-center-no-margin">
+            <button class="copy-button" id="copy-url-button" onmouseleave="resetCopyButton()"
+                onclick="copyServerLink()">
+                <span>mc.blockyalleys.com</span>
+
+                <span id="click-to-copy-text-sidebar">Click to copy</span>
+            </button>
+
+        </div>
+        <div class="flex-container-vertical">
+            <a href="/">Home</a>
+            <a href="/rules">Rules</a>
+            <a href="404">FAQ</a>
+            <a href="404">Join us</a>
+            <a href="https://discord.gg/7R5wVVTqgY">Discord Server</a>
+        </div>
+    </div>
+    <div class="sidenav-background" onclick="openSidebar()">
+
+    </div>
+</div>
+
+
+<body>
+    <button class="sidenav-button" onclick="openSidebar()">
+        <svg id="_圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359.86 305.57">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: none;
+                        stroke: #e9e9e9;
+                        stroke-linecap: round;
+                        stroke-miterlimit: 10;
+                        stroke-width: 51px;
+                    }
+                </style>
+            </defs>
+            <line class="cls-1" x1="25.5" y1="25.5" x2="334.36" y2="25.5" />
+            <line class="cls-1" x1="25.5" y1="152.79" x2="334.36" y2="152.79" />
+            <line class="cls-1" x1="25.5" y1="280.07" x2="334.36" y2="280.07" />
+        </svg>
+    </button>
+
+    <main>
+        <nav class="topnav">
+            <img class="logo" src="public/image/logo-big.png" alt="server logo">
+            <div class="topnav-right">
+                <a href="/404/">Rules</a>
+                <a href="/404/">FAQ</a>
+                <a href="https://discord.gg/7R5wVVTqgY">Discord Server</a>
+                <a href="/404/">Screenshots</a>
+
+                <button class="copy-button" id="copy-url-button" onmouseleave="resetCopyButton()"
+                    onclick="copyServerLink()">
+                    <span>mc.blockyalleys.com</span>
+
+                    <span id="click-to-copy-text">Click to copy</span>
+                </button>
+
+            </div>
+        </nav>
+
+
+        <section class="top-section">
+            <div class="flex-container-center-column">
+                <img src="public/image/tower.png" alt="Image of an tower" class="tower-image">
+                <h1>Our rules</h1>
+                <p class="paragraph-under-category-title">Before you can play we have a few rules you need to follow!
+                </p>
+            </div>
+
+
+            <h3 id="1-general-rules" class="general-rules">1. General Rules</h3>
+            <ol>
+                <li><strong>Respect Others</strong> – Be friendly and respectful to all players. Do not insult, bully,
+                    threaten, or harass others.</li>
+                <li><strong>No Cheating</strong> – The use of hacks, X-ray, fly mods, or any form of cheating is
+                    strictly prohibited. Exploiting bugs or glitches for unfair advantages is not allowed.</li>
+                <li><strong>No Griefing or Stealing</strong> – Do not destroy or steal other players&#39; property,
+                    including buildings, chests, items, farms, and animals, unless explicitly permitted.</li>
+                <li><strong>No Inappropriate Content</strong> – Offensive content (sexual, racist, political, hate
+                    speech, etc.) is not allowed in chat, builds, item names, or anywhere else.</li>
+                <li><strong>Follow Admin Instructions</strong> – The decisions of administrators are final. If you
+                    disagree, you may appeal through the proper channels. Do not insult or harass admins.</li>
+                <li><strong>No Command Abuse</strong> – Do not abuse teleport (TP), home, or any other commands to
+                    harass players, evade fights, or disrupt game balance.</li>
+            </ol>
+            <h3 class="rule-section-title">2. Building &amp; Land Claiming</h3>
+            <ol>
+                <li><strong>Respect Building Space</strong> – Do not build too close to others without permission. Keep
+                    a reasonable distance to avoid interfering with others.</li>
+                <li><strong>Large Constructions (e.g., Auto Farms, Mob Farms)</strong> – Must be built far from player
+                    gathering areas to prevent lag or disruption.</li>
+                <li><strong>Use Lighting</strong> – Place torches or other lighting around your builds to prevent
+                    excessive mob spawns.</li>
+                <li><strong>No Environmental Destruction</strong> – Avoid unnecessary damage to the landscape, such as
+                    excessive lava/water placement, random digging, or deforestation.</li>
+            </ol>
+            <h3 class="rule-section-title">3. Resources &amp; Economy</h3>
+            <ol>
+                <li><strong>Shared Resources</strong> – Public farms and community chests are available, but always
+                    replant and restock what you take.</li>
+                <li><strong>Private Resources</strong> – Do not take items from personal chests, mines, or farms without
+                    permission.</li>
+                <li><strong>Fair Trading</strong> – Players may trade freely, but scamming, misleading trades, or
+                    exploiting new players is prohibited.</li>
+                <li><strong>No Resource Hoarding</strong> – Do not excessively monopolize biomes, mob spawners, or large
+                    amounts of materials to maintain fair play.</li>
+            </ol>
+            <h3 class="rule-section-title">4. PvP Rules</h3>
+            <ol>
+                <li><strong>PvP Only in Designated Areas</strong> – Combat is allowed only in specific PvP zones or with
+                    mutual agreement. Unwanted PvP is prohibited.</li>
+                <li><strong>No Killing Pets/Animals</strong> – Do not harm other players&#39; tamed pets or farm
+                    animals, even in PvP.</li>
+                <li><strong>Return Items After PvP</strong> – If a player dies in PvP, return their gear and items
+                    unless they agree to forfeit them.</li>
+                <li><strong>No TP-Killing</strong> – Do not use teleport commands to ambush or trap other players.</li>
+            </ol>
+            <h3 class="rule-section-title">5. Chat &amp; Communication</h3>
+            <ol>
+                <li><strong>Keep Chat Civil</strong> – No excessive swearing, spamming, or use of all caps. Do not
+                    insult or provoke others.</li>
+                <li><strong>No Advertising</strong> – Do not promote other servers or engage in real-money trading.</li>
+                <li><strong>No Spreading Misinformation or Causing Drama</strong> – Avoid unnecessary conflicts and
+                    disputes.</li>
+                <li><strong>Use Appropriate Language</strong> – If the server has an official language, use it in public
+                    chats to ensure inclusivity.</li>
+            </ol>
+            <h3 class="rule-section-title">6. Server Administration</h3>
+            <ol>
+                <li><strong>Obey Staff Instructions</strong> – Admins and moderators have the authority to enforce rules
+                    and apply penalties.</li>
+                <li><strong>Report Issues to Admins</strong> – Use Discord, private messages, or official reporting
+                    methods to notify staff of any problems.</li>
+                <li><strong>No Impersonating Staff</strong> – Do not use names similar to admin names or fake official
+                    announcements.</li>
+            </ol>
+            <h3 class="rule-section-title">7. Rule Violations &amp; Punishments</h3>
+            <ul class="dotless-ul">
+                <li>
+                    <p><strong>First Offense</strong>: Warning or minor punishment (e.g., temporary mute).</p>
+                    <p><strong>Repeated Offenses</strong>: Temporary ban or in-game penalties.</p>
+                    <p><strong>Severe Violations</strong>: Permanent ban, possibly reported to the wider Minecraft community ban
+                        lists.</p>
+                </li>
+            </ul>
+            <h3 class="rule-section-title">8. Appeals &amp; Conflict Resolution</h3>
+            <ul class="dotless-ul">
+                <p>If you disagree with a punishment, you may appeal via the official Discord, email, or in-game feedback
+                    system.</p>
+                <p>Provide evidence (screenshots, videos, etc.) when submitting an appeal. Staff will review it within 24-48
+                    hours.</p>
+                <p>Resolve conflicts peacefully – Avoid personal revenge or escalating disputes.</p>
+            </ul>
+            <p class="last-text">✅ By playing on this server, you agree to follow these rules. Failure to comply may result in penalties
+                and/or bans. ✅</p>
+
+        </section>
+
+        <footer>
+            <div class="flex-container-center-no-margin">
+                <div class="flex-container-horizontal">
+                    <img  class="logo" src="public/image/logo-big.png">
+                </div>
+            </div>
+            <div class="flex-container-center-no-margin">
+                <div class="flex-container-horizontal">
+                    <a href="/">Home</a>
+                    <a href="404">Rules</a>
+                    <a href="404">FAQ</a>
+                    <a href="404">Join us</a>
+                    <a href="https://discord.gg/7R5wVVTqgY">Discord Server</a>
+                </div>
+            </div>
+            <div class="flex-container-center-no-margin">
+                <div class="flex-container-horizontal">
+                    <p class="footer-copyright">© 2025 Blocky Alleys Authors. All Rights Reserved</p>
+                </div>
+            </div>
+            
+        </footer>
+    </main>
+
+    <script>
+        function copyServerLink() {
+            try {
+                navigator.clipboard.writeText("mc.blockyalleys.com");
+                document.getElementById('click-to-copy-text').innerHTML = "Copied!";
+            } catch (error) {
+                alert(error);
+            }
+        }
+
+        function resetCopyButton() {
+            setTimeout(function () {
+                document.getElementById('click-to-copy-text').innerHTML = "Click to copy";
+            }, 200);
+        }
+
+        var isSidebarOpen = false;
+
+        function openSidebar() {
+            var element = document.getElementById('sidebar');
+            if (isSidebarOpen) {
+                element.style.display = "none";
+                isSidebarOpen = false;
+
+            }
+            else {
+                element.style.display = "block";
+                isSidebarOpen = true;
+            }
+
+        }
+
+        function closeSidebar() {
+            var element = document.getElementById('sidebar');
+            element.style.display = "none";
+        }
+
+
+        ScrollReveal().reveal('.minecraft-well-img', { viewOffset: { bottom: 190 }, dsitance: '40px', delay: 20 });
+        ScrollReveal().reveal('.who-are-we-title', { viewOffset: { bottom: 60 }, dsitance: '40px', delay: 60 });
+        ScrollReveal().reveal('.who-are-we-paragraph', { viewOffset: { bottom: 10 }, dsitance: '40px', delay: 110 });
+
+        ScrollReveal().reveal('.screenshot-title', { viewOffset: { bottom: 80 }, dsitance: '400px', delay: 0 });
+        ScrollReveal().reveal('.screenshots-paragraph-container', { viewOffset: { bottom: 80 }, dsitance: '450px', delay: 0 });
+
+        ScrollReveal().reveal('.screenshot1', { viewOffset: { bottom: 80 }, dsitance: '500px', delay: 20 });
+        ScrollReveal().reveal('.screenshot2', { viewOffset: { bottom: 80 }, dsitance: '500px', delay: 80 });
+        ScrollReveal().reveal('.screenshot3', { viewOffset: { bottom: 80 }, dsitance: '500px', delay: 160 });
+        ScrollReveal().reveal('.screenshot4', { viewOffset: { bottom: 10 }, dsitance: '500px', delay: 220 });
+        ScrollReveal().reveal('.screenshot5', { viewOffset: { bottom: 10 }, dsitance: '500px', delay: 280 });
+        ScrollReveal().reveal('.screenshot6', { viewOffset: { bottom: 10 }, dsitance: '500px', delay: 360 });
+    </script>
+
+</body>
+
+
+
+</html>
