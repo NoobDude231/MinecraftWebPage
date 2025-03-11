@@ -35,7 +35,7 @@ const app = express();
 const PORT = 4000;
 
 // 设置 Ejs 为网页渲染引擎
-app.set('view-engine', 'ejs');
+app.set('view engine', 'ejs');
 
 // 设置静态文件目录
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -48,6 +48,11 @@ app.get('/', (req, res) => {
 // 规则页面
 app.get('/rules', (req, res) => {
     res.sendFile(path.join(__dirname, 'rules.html'));
+});
+
+// 规则页面
+app.get('/tmp', (req, res) => {
+    res.render('tmp')
 });
 
 // 404页面
