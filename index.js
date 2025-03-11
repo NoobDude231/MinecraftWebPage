@@ -34,6 +34,9 @@ const path = require('path');
 const app = express();
 const PORT = 4000;
 
+// 设置 Ejs 为网页渲染引擎
+app.set('view-engine', 'ejs');
+
 // 设置静态文件目录
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
