@@ -1,0 +1,67 @@
+<div class="sidenav" id="sidebar">
+    <div class="sidenav-content">
+        <div class="flex-container-center-no-margin">
+            <a href="/">
+                <img class="logo" src="public/image/logo-big.png" alt="server logo">
+            </a>
+        </div>
+            
+
+        <div class="flex-container-center-no-margin">
+            <button class="copy-button" id="copy-url-button" onmouseleave="resetCopyButtonSidebar()" onclick="copyServerLinkSidebar()" >
+                <span>mc.blockyalleys.com</span>
+                
+                <span id="click-to-copy-text-sidebar">Click to copy</span>                    
+            </button>
+            
+        </div>
+        <div class="flex-container-vertical">         
+            <a href="/">Home</a>
+            <a href="/rules">Rules</a>
+            <a href="404">FAQ</a>
+            <a href="404">Joisssn us</a>
+            <a href="https://discord.gg/7R5wVVTqgY">Discord Server</a>
+        </div>
+    </div>
+    <div class="sidenav-background"  onclick="openSidebar()">
+
+    </div>
+</div>
+
+<script>
+    function copyServerLinkSidebar() {
+        try {
+            navigator.clipboard.writeText("mc.blockyalleys.com");
+            document.getElementById('click-to-copy-text-sidebar').innerHTML = "Copied!";
+        } catch (error) {
+            alert(error);
+        }
+    }
+
+    function resetCopyButtonSidebar() {
+        setTimeout(function() {
+            document.getElementById('click-to-copy-text-sidebar').innerHTML = "Click to copy";  
+        }, 200);
+    }
+
+    var isSidebarOpen = false;
+
+    function openSidebar() {
+        var element = document.getElementById('sidebar');        
+        if (isSidebarOpen) {            
+            element.style.display = "none";
+            isSidebarOpen = false;
+
+        }
+        else {
+            element.style.display = "block";
+            isSidebarOpen = true;
+        }
+
+    }
+
+    function closeSidebar() {
+        var element = document.getElementById('sidebar');
+        element.style.display = "none";
+    }
+</script>

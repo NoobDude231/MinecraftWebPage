@@ -84,7 +84,7 @@
     margin-bottom: 1rem;    
 }
 
-.sidenav a {
+.sidenav .flex-container-vertical a {
     text-decoration: none;
     font-weight: 500;
     margin-top: 0.7rem;

@@ -17,34 +17,7 @@
 </head>
 
 
-<div class="sidenav" id="sidebar">
-    <div class="sidenav-content">
-        <div class="flex-container-center-no-margin">
-            <img class="logo" src="public/image/logo-big.png" alt="server logo">
-        </div>
-
-
-        <div class="flex-container-center-no-margin">
-            <button class="copy-button" id="copy-url-button" onmouseleave="resetCopyButton()"
-                onclick="copyServerLink()">
-                <span>mc.blockyalleys.com</span>
-
-                <span id="click-to-copy-text-sidebar">Click to copy</span>
-            </button>
-
-        </div>
-        <div class="flex-container-vertical">
-            <a href="/">Home</a>
-            <a href="/rules">Rules</a>
-            <a href="404">FAQ</a>
-            <a href="404">Join us</a>
-            <a href="https://discord.gg/7R5wVVTqgY">Discord Server</a>
-        </div>
-    </div>
-    <div class="sidenav-background" onclick="openSidebar()">
-
-    </div>
-</div>
+<%- include('partials/sidebar') %>
 
 
 <body>
@@ -68,24 +41,7 @@
     </button>
 
     <main>
-        <nav class="topnav">
-            <img class="logo" src="public/image/logo-big.png" alt="server logo">
-            <div class="topnav-right">
-                <a href="/404/">Rules</a>
-                <a href="/404/">FAQ</a>
-                <a href="https://discord.gg/7R5wVVTqgY">Discord Server</a>
-                <a href="/404/">Screenshots</a>
-
-                <button class="copy-button" id="copy-url-button" onmouseleave="resetCopyButton()"
-                    onclick="copyServerLink()">
-                    <span>mc.blockyalleys.com</span>
-
-                    <span id="click-to-copy-text">Click to copy</span>
-                </button>
-
-            </div>
-        </nav>
-
+        <%- include('partials/top-nav') %>
 
         <section class="top-section">
             <div class="flex-container-center-column">
@@ -183,29 +139,8 @@
                 and/or bans. ✅</p>
 
         </section>
-
-        <footer>
-            <div class="flex-container-center-no-margin">
-                <div class="flex-container-horizontal">
-                    <img  class="logo" src="public/image/logo-big.png">
-                </div>
-            </div>
-            <div class="flex-container-center-no-margin">
-                <div class="flex-container-horizontal">
-                    <a href="/">Home</a>
-                    <a href="/rules">Rules</a>
-                    <a href="404">FAQ</a>
-                    <a href="404">Join us</a>
-                    <a href="https://discord.gg/7R5wVVTqgY">Discord Server</a>
-                </div>
-            </div>
-            <div class="flex-container-center-no-margin">
-                <div class="flex-container-horizontal">
-                    <p class="footer-copyright">© 2025 Blocky Alleys Authors. All Rights Reserved</p>
-                </div>
-            </div>
-            
-        </footer>
+        
+        <%- include('partials/footer')  %>
     </main>
 
     <script>
@@ -222,27 +157,6 @@
             setTimeout(function () {
                 document.getElementById('click-to-copy-text').innerHTML = "Click to copy";
             }, 200);
-        }
-
-        var isSidebarOpen = false;
-
-        function openSidebar() {
-            var element = document.getElementById('sidebar');
-            if (isSidebarOpen) {
-                element.style.display = "none";
-                isSidebarOpen = false;
-
-            }
-            else {
-                element.style.display = "block";
-                isSidebarOpen = true;
-            }
-
-        }
-
-        function closeSidebar() {
-            var element = document.getElementById('sidebar');
-            element.style.display = "none";
         }
 
 

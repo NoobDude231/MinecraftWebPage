@@ -42,12 +42,12 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // 主页路由
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.render('index.ejs');
 });
 
 // 规则页面
 app.get('/rules', (req, res) => {
-    res.sendFile(path.join(__dirname, 'rules.html'));
+    res.render('rules.ejs');
 });
 
 // 规则页面
@@ -59,6 +59,11 @@ app.get('/tmp', (req, res) => {
 app.get('/404/', (req, res) => {
     res.send('<h1>404 - Page Not Found</h1>');
 });
+
+app.get('*', (req, res) => {
+    res.send('<h1>404 - Page Not Found</h1>');
+});
+
 
 // 启动服务器
 app.listen(PORT, () => {
