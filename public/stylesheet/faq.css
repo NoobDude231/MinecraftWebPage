@@ -1,0 +1,63 @@
+.stall-image {
+    margin-top: 1.5rem;
+    min-width: 19rem;
+    max-width: 7%;
+}
+
+.top-section {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    max-width: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.paragraph-under-category-title {
+    text-align: center;
+    margin-top: -1rem;
+}
+
+
+.top-section li {
+    font-size: min(2.2vw, 1.0rem);
+    font-family: "Inter", serif;
+    margin-top: 0.7rem;
+}
+
+.general-rules {
+    margin-top: -4.5rem;
+}
+
+.rule-section-title {
+    margin-top: 2rem;
+}
+
+
+.dotless-ul {
+    list-style: none;
+}
+
+.dotless-ul p {
+    font-size: min(2.2vw, 1.0rem);
+    font-family: "Inter", serif;
+    margin-top: 0.7rem;
+}
+
+a {
+    font-size: max(2.vw, 1.8rem);
+    font-family: "Inter", serif;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: max(2.vw, 1.8rem);
+    font-family: "Inter", serif;
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+}

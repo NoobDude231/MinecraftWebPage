@@ -51,8 +51,8 @@ app.get('/rules', (req, res) => {
 });
 
 // 规则页面
-app.get('/tmp', (req, res) => {
-    res.render('tmp')
+app.get('/faq', (req, res) => {
+    res.render('faq.ejs');
 });
 
 // 404页面

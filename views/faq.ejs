@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocky Alleys</title>
+    <link rel="icon" type="image/x-icon" href="public/image/favicon.png">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/shared.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/mobile.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/copy-button.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/check-out-more-screenshots-arrow.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/screenshot-section.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/faq.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+
+<%- include('partials/sidenav') %>
+
+
+    <body>
+        <button class="sidenav-button" onclick="openSidebar()">
+            <svg id="_圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359.86 305.57">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: none;
+                            stroke: #e9e9e9;
+                            stroke-linecap: round;
+                            stroke-miterlimit: 10;
+                            stroke-width: 51px;
+                        }
+                    </style>
+                </defs>
+                <line class="cls-1" x1="25.5" y1="25.5" x2="334.36" y2="25.5" />
+                <line class="cls-1" x1="25.5" y1="152.79" x2="334.36" y2="152.79" />
+                <line class="cls-1" x1="25.5" y1="280.07" x2="334.36" y2="280.07" />
+            </svg>
+        </button>
+
+        <main>
+            <%- include('partials/top-nav') %>
+
+                <section class="top-section">
+                    <div class="flex-container-center-column">
+                        <img src="public/image/minecraft_stall.png" alt="Image of a stall" class="stall-image">
+                        <h1>FAQs</h1>
+                        <p class="paragraph-under-category-title">Here you can find answers to some frequently asked
+                            questions!
+                        </p>
+                    </div>
+
+                    <h3 id="what-type-of-server-are-we-">What type of server are we?</h3>
+                    <p>We are a mostly a vanilla server with a couple of plugins in to enhance the player experience.
+                    </p>
+                    <h3 id="what-server-plugins-do-we-have">What server plugins do we have</h3>
+
+                    <p>We have use several pulgins on our server, here are the most important ones:</p>
+
+                    <ul>
+                        
+                        <li>
+                            <a href="https://modrinth.com/datapack/veinminer-enchantment">Veinminer Enchantment</a>
+                        </li>
+                        <li>
+                            <a href="https://www.spigotmc.org/resources/axgraves-lootable-death-chests.113629/">AxGraves</a>
+                        </li>
+                        <li>
+                            <a href="https://modrinth.com/plugin/freedomchat">FreedomChat</a>
+                        </li>
+                        <li>
+                            <a href="https://www.spigotmc.org/resources/%E2%9C%A8damage-indicator-%E2%9C%A8.87113/">✨DAMAGE INDICATOR ✨</a>
+                        </li>
+                        <li>
+                            <a href="https://www.spigotmc.org/resources/levelledmobs.74304/">LevelledMobs</a>
+                        </li>
+                        <li>
+                            <a href="https://www.spigotmc.org/resources/quickshop-hikari-a-powerful-user-friendly-and-reliable-chestshop-plugin-1-20-1-21.100125/">QuickShop-Hikari</a>
+                        </li>
+
+                    </ul>
+                    <h3 id="where-is-our-server-located-">Where is our server located?</h3>
+                    <ul>
+                        <li>Our server is located in Sweden</li>
+                    </ul>
+                    <h3 id="what-version-do-we-use-">What version do we use?</h3>
+                    <ul>
+                        <li>We use 1.21.4</li>
+                    </ul>
+                    
+
+
+
+
+                </section>
+
+                <%- include('partials/footer') %>
+        </main>
+
+        <script>
+            function copyServerLink() {
+                try {
+                    navigator.clipboard.writeText("mc.blockyalleys.com");
+                    document.getElementById('click-to-copy-text').innerHTML = "Copied!";
+                } catch (error) {
+                    alert(error);
+                }
+            }
+
+            function resetCopyButton() {
+                setTimeout(function () {
+                    document.getElementById('click-to-copy-text').innerHTML = "Click to copy";
+                }, 200);
+            }
+
+
+            ScrollReveal().reveal('.minecraft-well-img', { viewOffset: { bottom: 190 }, dsitance: '40px', delay: 20 });
+            ScrollReveal().reveal('.who-are-we-title', { viewOffset: { bottom: 60 }, dsitance: '40px', delay: 60 });
+            ScrollReveal().reveal('.who-are-we-paragraph', { viewOffset: { bottom: 10 }, dsitance: '40px', delay: 110 });
+
+            ScrollReveal().reveal('.screenshot-title', { viewOffset: { bottom: 80 }, dsitance: '400px', delay: 0 });
+            ScrollReveal().reveal('.screenshots-paragraph-container', { viewOffset: { bottom: 80 }, dsitance: '450px', delay: 0 });
+
+            ScrollReveal().reveal('.screenshot1', { viewOffset: { bottom: 80 }, dsitance: '500px', delay: 20 });
+            ScrollReveal().reveal('.screenshot2', { viewOffset: { bottom: 80 }, dsitance: '500px', delay: 80 });
+            ScrollReveal().reveal('.screenshot3', { viewOffset: { bottom: 80 }, dsitance: '500px', delay: 160 });
+            ScrollReveal().reveal('.screenshot4', { viewOffset: { bottom: 10 }, dsitance: '500px', delay: 220 });
+            ScrollReveal().reveal('.screenshot5', { viewOffset: { bottom: 10 }, dsitance: '500px', delay: 280 });
+            ScrollReveal().reveal('.screenshot6', { viewOffset: { bottom: 10 }, dsitance: '500px', delay: 360 });
+        </script>
+
+    </body>
+
+
+
+</html>
