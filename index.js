@@ -55,6 +55,10 @@ app.get('/faq', (req, res) => {
     res.render('faq.ejs');
 });
 
+app.get('/helloworld', (req, res) => {
+    res.send('<h1>Hello world!</h1>');
+});
+
 // 404页面
 app.get('/404/', (req, res) => {
     res.send('<h1>404 - Page Not Found</h1>');

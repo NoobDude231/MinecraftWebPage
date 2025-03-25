@@ -131,6 +131,8 @@ button:active {
   margin-top: 7.5%;
 }
 
+
+
 .joinUs-button{
   transform: translateY(-0.3rem);
 }
@@ -150,6 +152,7 @@ button:active {
   flex-direction: column;
   margin-bottom: 7rem;  
 }
+
 
 .flex-container-center-no-margin{
   display: flex;

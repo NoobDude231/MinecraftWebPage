@@ -46,7 +46,7 @@
     .minecraft-store-img{
         margin-top: 2.5rem;  
     }
-
+    
 }
 
 @media screen and (min-width: 868px) {
@@ -58,6 +58,9 @@
         width: 0px;
     }
     .sidenav-content {
+        display: none;
+    }
+    .sidenav-background {
         display: none;
     }
 }
